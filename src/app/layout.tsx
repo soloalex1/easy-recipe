@@ -1,6 +1,10 @@
+import { PropsWithChildren } from 'react';
 import type { Metadata } from 'next';
+
+import { raleway, montserrat } from './fonts';
 import StyledComponentsRegistry from './registry';
-import { ContainerProps } from '@/types';
+
+import './global.css';
 
 export const metadata: Metadata = {
   title: 'EasyRecipe',
@@ -8,9 +12,9 @@ export const metadata: Metadata = {
   authors: [{ name: 'Alexandre Machado', url: 'https://alexmachina.dev' }],
 };
 
-const RootLayout = ({ children }: ContainerProps) => {
+const RootLayout = ({ children }: PropsWithChildren) => {
   return (
-    <html lang="en">
+    <html lang="en" className={`${raleway.variable} ${montserrat.variable}`}>
       <body>
         <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
       </body>

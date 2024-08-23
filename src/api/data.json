@@ -1,0 +1,214 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "position": 1,
+      "name": "Cheeseburger",
+      "difficulty": "easy",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 2,
+      "position": 2,
+      "name": "Spaghetti Carbonara",
+      "difficulty": "medium",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 3,
+      "position": 3,
+      "name": "Sushi Roll",
+      "difficulty": "hard",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 4,
+      "position": 4,
+      "name": "Lobster Thermidor",
+      "difficulty": "medium",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 5,
+      "position": 5,
+      "name": "Chicken Caesar Salad",
+      "difficulty": "easy",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 6,
+      "position": 6,
+      "name": "Beef Stroganoff",
+      "difficulty": "medium",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 7,
+      "position": 7,
+      "name": "Pad Thai",
+      "difficulty": "hard",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 8,
+      "position": 8,
+      "name": "Margherita Pizza",
+      "difficulty": "easy",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 9,
+      "position": 9,
+      "name": "Tandoori Chicken",
+      "difficulty": "medium",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 10,
+      "position": 10,
+      "name": "Beef Wellington",
+      "difficulty": "hard",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 11,
+      "position": 11,
+      "name": "Greek Salad",
+      "difficulty": "easy",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 12,
+      "position": 12,
+      "name": "Pancakes",
+      "difficulty": "medium",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 13,
+      "position": 13,
+      "name": "Coq au Vin",
+      "difficulty": "hard",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 14,
+      "position": 14,
+      "name": "Quiche Lorraine",
+      "difficulty": "medium",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 15,
+      "position": 15,
+      "name": "Fish Tacos",
+      "difficulty": "easy",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 16,
+      "position": 16,
+      "name": "Ratatouille",
+      "difficulty": "medium",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 17,
+      "position": 17,
+      "name": "Chicken Tikka Masala",
+      "difficulty": "hard",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 18,
+      "position": 18,
+      "name": "Shrimp Scampi",
+      "difficulty": "medium",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 19,
+      "position": 19,
+      "name": "Veggie Burger",
+      "difficulty": "easy",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 20,
+      "position": 20,
+      "name": "Chili Con Carne",
+      "difficulty": "medium",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 21,
+      "position": 21,
+      "name": "Lamb Curry",
+      "difficulty": "hard",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 22,
+      "position": 22,
+      "name": "Falafel",
+      "difficulty": "easy",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 23,
+      "position": 23,
+      "name": "Moussaka",
+      "difficulty": "medium",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 24,
+      "position": 24,
+      "name": "Osso Buco",
+      "difficulty": "hard",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 25,
+      "position": 25,
+      "name": "Beef Tacos",
+      "difficulty": "easy",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 26,
+      "position": 26,
+      "name": "Crispy Duck",
+      "difficulty": "medium",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 27,
+      "position": 27,
+      "name": "Seafood Paella",
+      "difficulty": "hard",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 28,
+      "position": 28,
+      "name": "Chicken Alfredo",
+      "difficulty": "medium",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 29,
+      "position": 29,
+      "name": "Peking Duck",
+      "difficulty": "hard",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 30,
+      "position": 30,
+      "name": "Garlic Butter Shrimp",
+      "difficulty": "medium",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    }
+  ]
+}

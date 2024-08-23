@@ -21,6 +21,7 @@ const RecipeCard = ({ recipe }: RecipeCardProps) => {
         height={100}
       />
       <caption>{recipe.difficulty}</caption>
+      <label>{recipe.position}</label>
     </S.Card>
   );
 };

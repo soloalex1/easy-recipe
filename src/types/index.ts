@@ -2,7 +2,7 @@ export type ContainerProps = {
   children: React.ReactNode;
 };
 
-enum Difficulty {
+export enum Difficulty {
   Easy = 'Easy',
   Medium = 'Medium',
   Hard = 'Hard',

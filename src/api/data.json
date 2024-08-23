@@ -209,6 +209,76 @@
       "name": "Garlic Butter Shrimp",
       "difficulty": "Medium",
       "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 31,
+      "position": 31,
+      "name": "Eggplant Parmesan",
+      "difficulty": "Easy",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 32,
+      "position": 32,
+      "name": "Mongolian Beef",
+      "difficulty": "Medium",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 33,
+      "position": 33,
+      "name": "Duck Confit",
+      "difficulty": "Hard",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 34,
+      "position": 34,
+      "name": "Pork Schnitzel",
+      "difficulty": "Medium",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 35,
+      "position": 35,
+      "name": "Clam Chowder",
+      "difficulty": "Easy",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 36,
+      "position": 36,
+      "name": "Braised Short Ribs",
+      "difficulty": "Hard",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 37,
+      "position": 37,
+      "name": "Cornbread",
+      "difficulty": "Easy",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 38,
+      "position": 38,
+      "name": "Ramen",
+      "difficulty": "Medium",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 39,
+      "position": 39,
+      "name": "Sauerbraten",
+      "difficulty": "Hard",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
+    },
+    {
+      "id": 40,
+      "position": 40,
+      "name": "Fettuccine Alfredo",
+      "difficulty": "Medium",
+      "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
     }
   ]
 }

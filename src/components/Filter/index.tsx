@@ -27,6 +27,7 @@ const Filter = ({ filter, onChange }: FilterProps) => {
         </S.FiltersDescription>
         <div>
           <S.Button
+            id="easy"
             $isActive={isButtonActive('Easy')}
             role="button"
             onClick={handleClick}
@@ -34,6 +35,7 @@ const Filter = ({ filter, onChange }: FilterProps) => {
             Easy
           </S.Button>
           <S.Button
+            id="medium"
             $isActive={isButtonActive('Medium')}
             role="button"
             onClick={handleClick}
@@ -41,6 +43,7 @@ const Filter = ({ filter, onChange }: FilterProps) => {
             Medium
           </S.Button>
           <S.Button
+            id="hard"
             $isActive={isButtonActive('Hard')}
             role="button"
             onClick={handleClick}

@@ -1,16 +1,15 @@
 import styled, { css } from 'styled-components';
 
-const primaryBlue = getComputedStyle(document.documentElement).getPropertyValue(
-  '--primary-blue'
-);
-
-export const Card = styled.li<{ $isSelected: boolean }>`
-  ${({ $isSelected }) => css`
+export const Card = styled.li<{
+  $isSelected: boolean;
+  $difficulty: string;
+}>`
+  ${({ theme, $isSelected, $difficulty }) => css`
     box-shadow: ${$isSelected ? 'none' : '#00000026 2px 2px 1px'};
     border-radius: 8px;
     border-width: 2px;
     border-style: solid;
-    border-color: ${$isSelected ? primaryBlue : 'transparent'};
+    border-color: ${$isSelected ? theme.colors[$difficulty] : 'transparent'};
     font-family: var(--font-raleway);
     position: relative;
     display: flex;
@@ -31,7 +30,7 @@ export const Card = styled.li<{ $isSelected: boolean }>`
     }
 
     ${Title} {
-      color: ${$isSelected ? primaryBlue : '#000'};
+      color: ${$isSelected ? theme.colors[$difficulty] : '#000'};
     }
   `}
 `;
@@ -43,7 +42,7 @@ export const TextContainer = styled.div`
   margin-top: auto;
   z-index: 2;
   border-radius: 0 0 8px 8px;
-  background-color: white;
+  background-color: var(--white);
   padding: 4px 8px;
 `;
 
@@ -74,8 +73,7 @@ export const PositionBadge = styled.small`
   left: 0;
   z-index: 3;
   font-weight: 700;
-
-  background-color: #eee;
+  background-color: var(--white);
   border-radius: 8px 0 8px 0;
   padding: 8px;
 `;

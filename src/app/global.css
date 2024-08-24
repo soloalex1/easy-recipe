@@ -1,5 +1,9 @@
 :root {
-  --primary-blue: #0096ff;
+  --primary-blue: #2891bb;
+  --color-easy: #4b6b51;
+  --color-medium: #ffdfba;
+  --color-hard: #ffb3ba;
+  --white: #faf8f6;
 }
 
 * {
@@ -10,6 +14,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--white);
 }
 
 body {

@@ -5,6 +5,7 @@ import { raleway, montserrat } from './fonts';
 import StyledComponentsRegistry from './registry';
 
 import './global.css';
+import ThemeClient from '@/components/ThemeClient';
 
 export const metadata: Metadata = {
   title: 'EasyRecipe',
@@ -16,7 +17,9 @@ const RootLayout = ({ children }: PropsWithChildren) => {
   return (
     <html lang="en" className={`${raleway.variable} ${montserrat.variable}`}>
       <body>
-        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        <StyledComponentsRegistry>
+          <ThemeClient>{children}</ThemeClient>
+        </StyledComponentsRegistry>
       </body>
     </html>
   );

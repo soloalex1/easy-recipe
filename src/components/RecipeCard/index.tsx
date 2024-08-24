@@ -12,15 +12,17 @@ type RecipeCardProps = {
 };
 
 const RecipeCard = ({ recipe, selected }: RecipeCardProps) => {
-  const currentlySelected = selected === recipe.difficulty;
+  const { difficulty, position, imageUrl, name } = recipe;
+
+  const isSelected = selected === difficulty;
 
   return (
-    <S.Card $isSelected={currentlySelected}>
-      <S.PositionBadge>{recipe.position}</S.PositionBadge>
-      <Image src={recipe.imageUrl} loading="lazy" alt="" layout="fill" />
+    <S.Card $isSelected={isSelected} $difficulty={difficulty.toLowerCase()}>
+      <S.PositionBadge>{position}</S.PositionBadge>
+      <Image src={imageUrl} loading="lazy" alt="" layout="fill" />
       <S.TextContainer>
-        <S.Title>{recipe.name}</S.Title>
-        <S.Difficulty>{recipe.difficulty}</S.Difficulty>
+        <S.Title>{name}</S.Title>
+        <S.Difficulty>{difficulty}</S.Difficulty>
       </S.TextContainer>
     </S.Card>
   );

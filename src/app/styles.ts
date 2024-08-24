@@ -1,5 +1,14 @@
 import styled from 'styled-components';
 
+export const theme = {
+  colors: {
+    blue: '#2891bb',
+    easy: '#4b6b51',
+    medium: '#ffdfba',
+    hard: '#ffb3ba',
+  },
+};
+
 export const MainContainer = styled.main`
   scrollbar-gutter: stable both-edges;
   width: 100%;

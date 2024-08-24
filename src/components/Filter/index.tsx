@@ -4,13 +4,14 @@ import * as S from './styles';
 
 type FilterProps = {
   filter: Difficulty | '';
-  onChange(difficulty: string): void;
+  onChange(difficulty: string | null): void;
 };
 
 const Filter = ({ filter, onChange }: FilterProps) => {
   const handleClick = (event: MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
-    onChange(event.currentTarget.textContent!);
+    const value = event.currentTarget.textContent!;
+    onChange(filter === value ? null : event.currentTarget.textContent!);
   };
 
   const isButtonActive = (id: string) => {

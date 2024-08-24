@@ -4,8 +4,11 @@ import { Difficulty, Recipe } from '@/types';
 
 import data from '@/api/data.json';
 
-const useSortedRecipes = (difficulty: Difficulty) => {
+const useSortedRecipes = (difficulty: Difficulty | null) => {
   const sortedRecipes = useMemo(() => {
+    if (!difficulty)
+      return data.recipes.sort((a, b) => a.position - b.position);
+
     const [matchingDifficulty, otherRecipes] = data.recipes.reduce(
       ([matching, others], recipe) => {
         if (recipe.difficulty === difficulty) {

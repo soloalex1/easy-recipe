@@ -5,24 +5,19 @@ import { useState } from 'react';
 import RecipeCard from '@/components/RecipeCard';
 import Filter from '@/components/Filter';
 
+import useSortedRecipes from '@/hooks/useSortedRecipes';
+
 import { Recipe, Difficulty } from '@/types';
-import data from '@/api/data.json';
+
 import * as S from './styles';
 
 export default function Home() {
   const [filter, setFilter] = useState<Difficulty | ''>();
-  const [recipeList, setRecipeList] = useState(data.recipes);
 
-  const filterRecipeList = (difficulty: Difficulty) => {
-    if (difficulty !== filter) {
-      setFilter(difficulty);
-      setRecipeList(
-        data.recipes.filter((recipe) => recipe.difficulty === difficulty)
-      );
-      return;
-    }
-    setFilter('');
-    setRecipeList(data.recipes);
+  const recipeList = useSortedRecipes(filter as Difficulty);
+
+  const handleChange = (difficulty: Difficulty) => {
+    setFilter(difficulty);
   };
 
   return (
@@ -31,16 +26,18 @@ export default function Home() {
         <S.PageTitle>Recipes</S.PageTitle>
       </S.PageHeader>
 
-      <Filter filter={filter!} onChange={filterRecipeList} />
+      <Filter filter={filter!} onChange={handleChange} />
 
       <section aria-labelledby="recipes-title">
         <S.SectionTitle id="recipes-title">Trending Recipes</S.SectionTitle>
         <S.RecipeGrid>
-          {recipeList
-            .sort((a, b) => a.position - b.position)
-            .map(({ id, ...recipe }) => (
-              <RecipeCard key={id} recipe={recipe as Recipe} />
-            ))}
+          {recipeList.map(({ id, ...recipe }) => (
+            <RecipeCard
+              key={id}
+              recipe={recipe as Recipe}
+              selected={recipe.difficulty === filter}
+            />
+          ))}
         </S.RecipeGrid>
       </section>
     </S.MainContainer>

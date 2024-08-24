@@ -1,21 +1,23 @@
 'use client';
 
+import Image from 'next/image';
+
 import { Recipe } from '@/types';
 
 import * as S from './styles';
-import Image from 'next/image';
 
 type RecipeCardProps = {
   recipe: Recipe;
+  selected: boolean;
 };
 
-const RecipeCard = ({ recipe }: RecipeCardProps) => {
+const RecipeCard = ({ recipe, selected }: RecipeCardProps) => {
   return (
     <S.Card>
       <S.PositionBadge>{recipe.position}</S.PositionBadge>
       <Image src={recipe.imageUrl} loading="lazy" alt="" layout="fill" />
       <S.TextContainer>
-        <S.Title>{recipe.name}</S.Title>
+        <S.Title $selected={selected}>{recipe.name}</S.Title>
         <S.Difficulty>{recipe.difficulty}</S.Difficulty>
       </S.TextContainer>
     </S.Card>

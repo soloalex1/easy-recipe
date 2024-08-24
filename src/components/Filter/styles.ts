@@ -22,14 +22,14 @@ export const FiltersDescription = styled.small`
   color: #666;
 `;
 
-export const Button = styled.button<{ isActive: boolean }>`
-  ${({ isActive }) => css`
+export const Button = styled.button<{ $isActive: boolean }>`
+  ${({ $isActive }) => css`
     padding: 12px 32px;
     background-color: #fff;
     font-family: var(--font-raleway);
     font-weight: 600;
-    border: 2px solid ${isActive ? '#0096FF' : '#111'};
-    color: ${isActive ? '#0096FF' : '#111'};
+    border: 2px solid ${$isActive ? '#0096FF' : '#111'};
+    color: ${$isActive ? '#0096FF' : '#111'};
 
     &:first-of-type {
       border-radius: 8px 0 0 8px;

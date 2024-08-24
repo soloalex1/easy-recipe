@@ -27,21 +27,21 @@ const Filter = ({ filter, onChange }: FilterProps) => {
         </S.FiltersDescription>
         <div>
           <S.Button
-            isActive={isButtonActive('Easy')}
+            $isActive={isButtonActive('Easy')}
             role="button"
             onClick={handleClick}
           >
             Easy
           </S.Button>
           <S.Button
-            isActive={isButtonActive('Medium')}
+            $isActive={isButtonActive('Medium')}
             role="button"
             onClick={handleClick}
           >
             Medium
           </S.Button>
           <S.Button
-            isActive={isButtonActive('Hard')}
+            $isActive={isButtonActive('Hard')}
             role="button"
             onClick={handleClick}
           >

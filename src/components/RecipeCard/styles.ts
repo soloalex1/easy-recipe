@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Card = styled.li`
   box-shadow: #00000026 2px 2px 1px;
@@ -34,17 +34,20 @@ export const TextContainer = styled.div`
   padding: 4px 8px;
 `;
 
-export const Title = styled.h3`
-  font-size: 1rem;
-  line-height: 1rem;
-  font-weight: 600;
-  margin: 4px 0;
-  font-family: var(--font-montserrat);
+export const Title = styled.h3<{ $selected: boolean }>`
+  ${({ $selected }) => css`
+    margin: 4px 0;
+    color: ${$selected ? '#0096FF' : '#000'}
+    font-family: var(--font-montserrat);
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: 600;
 
-  @media screen and (min-width: 768px) {
-    font-size: 1.25rem;
-    line-height: 1.25rem;
-  }
+    @media screen and (min-width: 768px) {
+      font-size: 1.25rem;
+      line-height: 1.25rem;
+    }
+  `}
 `;
 
 export const Difficulty = styled.p`

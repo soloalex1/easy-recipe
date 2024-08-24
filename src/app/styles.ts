@@ -15,6 +15,7 @@ export const PageHeader = styled.header`
   width: 100%;
   grid-column: 1 / -1;
   background-color: #eee;
+  border-radius: 0 0 8px 8px;
 `;
 
 export const PageTitle = styled.h1`
@@ -29,14 +30,15 @@ export const SectionTitle = styled.h2`
 
 export const RecipeGrid = styled.ol`
   margin: 24px 0;
-  padding: 0 8px;
+  padding: 0 24px;
   display: grid;
-  gap: 8px;
-  grid-template: repeat(14, 200px) / repeat(3, 1fr);
-  grid-auto-rows: minmax(30px, auto);
+
+  grid-template: 280px / repeat(2, 1fr);
+  grid-auto-rows: 280px;
+  gap: 16px;
 
   @media screen and (min-width: 768px) {
     padding: 0;
-    grid-template: repeat(10, 200px) / repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 `;

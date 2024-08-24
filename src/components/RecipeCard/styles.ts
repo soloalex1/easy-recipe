@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const Card = styled.li`
-  border: 1px solid black;
-  border-radius: 6px;
+  border: 2px solid #111;
+  border-radius: 8px;
   font-family: var(--font-raleway);
   position: relative;
   display: flex;
@@ -13,7 +13,7 @@ export const Card = styled.li`
     object-fit: cover;
     top: 0;
     left: 0;
-    border-radius: 6px;
+    border-radius: 8px 0 8px 8px;
     z-index: 1;
   }
 `;
@@ -24,25 +24,25 @@ export const TextContainer = styled.div`
   position: relative;
   margin-top: auto;
   z-index: 2;
-  border-radius: 0 0 6px 6px;
+  border-radius: 0 0 8px 8px;
   background-color: white;
   padding: 4px 8px;
 `;
 
 export const Title = styled.h3`
-  font-size: 0.75rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 600;
   margin: 4px 0;
   font-family: var(--font-montserrat);
 
   @media screen and (min-width: 768px) {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 `;
 
 export const Difficulty = styled.p`
   margin: 0;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   color: #666;
   font-family: var(--font-raleway);
 `;
@@ -52,8 +52,9 @@ export const PositionBadge = styled.small`
   top: 0;
   left: 0;
   z-index: 3;
+  font-weight: 700;
 
   background-color: #eee;
-  border-radius: 6px 0 6px 0;
+  border-radius: 8px 0 8px 0;
   padding: 8px;
 `;

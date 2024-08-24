@@ -25,8 +25,12 @@ export const Card = styled.li<{
       object-fit: cover;
       top: 0;
       left: 0;
-      border-radius: 8px 0 8px 8px;
+      border-radius: 8px;
       z-index: 1;
+    }
+
+    ${PositionBadge} {
+      color: ${$isSelected ? theme.colors[$difficulty] : '#000'};
     }
 
     ${Title} {

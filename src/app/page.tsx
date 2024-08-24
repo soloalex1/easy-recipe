@@ -20,15 +20,18 @@ export default function Home() {
   return (
     <S.MainContainer>
       <S.PageHeader>
-        <S.PageTitle id="title">Trending Recipes</S.PageTitle>
+        <S.PageTitle>Recipes</S.PageTitle>
       </S.PageHeader>
-      <S.RecipeGrid aria-labelledby="title">
-        {recipeList
-          .sort((a, b) => a.position - b.position)
-          .map(({ id, ...recipe }) => (
-            <RecipeCard key={id} recipe={recipe as Recipe} />
-          ))}
-      </S.RecipeGrid>
+      <section aria-labelledby="recipes-title">
+        <S.SectionTitle id="recipes-title">Trending Recipes</S.SectionTitle>
+        <S.RecipeGrid>
+          {recipeList
+            .sort((a, b) => a.position - b.position)
+            .map(({ id, ...recipe }) => (
+              <RecipeCard key={id} recipe={recipe as Recipe} />
+            ))}
+        </S.RecipeGrid>
+      </section>
     </S.MainContainer>
   );
 }

@@ -14,19 +14,22 @@ export const MainContainer = styled.main`
 export const PageHeader = styled.header`
   width: 100%;
   grid-column: 1 / -1;
-
-  display: flex;
-  justify-content: center;
   background-color: #eee;
 `;
 
 export const PageTitle = styled.h1`
   font-family: var(--font-montserrat);
+  text-align: center;
 `;
 
-export const RecipeGrid = styled.section`
+export const SectionTitle = styled.h2`
+  font-family: var(--font-montserrat);
+  text-align: center;
+`;
+
+export const RecipeGrid = styled.ol`
   margin: 24px 0;
   display: grid;
   gap: 8px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template: repeat(10, 1fr) / repeat(4, 1fr);
 `;

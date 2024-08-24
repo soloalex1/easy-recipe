@@ -29,7 +29,14 @@ export const SectionTitle = styled.h2`
 
 export const RecipeGrid = styled.ol`
   margin: 24px 0;
+  padding: 0 8px;
   display: grid;
   gap: 8px;
-  grid-template: repeat(10, 1fr) / repeat(4, 1fr);
+  grid-template: repeat(14, 200px) / repeat(3, 1fr);
+  grid-auto-rows: minmax(30px, auto);
+
+  @media screen and (min-width: 768px) {
+    padding: 0;
+    grid-template: repeat(10, 200px) / repeat(4, 1fr);
+  }
 `;

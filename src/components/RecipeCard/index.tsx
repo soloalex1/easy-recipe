@@ -12,16 +12,11 @@ type RecipeCardProps = {
 const RecipeCard = ({ recipe }: RecipeCardProps) => {
   return (
     <S.Card>
-      {/* <Image
-        src={recipe.imageUrl}
-        loading="lazy"
-        alt=""
-        layout="fill"
-      /> */}
+      <S.PositionBadge>{recipe.position}</S.PositionBadge>
+      <Image src={recipe.imageUrl} loading="lazy" alt="" layout="fill" />
       <S.TextContainer>
         <S.Title>{recipe.name}</S.Title>
         <S.Difficulty>{recipe.difficulty}</S.Difficulty>
-        <S.PositionBadge>{recipe.position}</S.PositionBadge>
       </S.TextContainer>
     </S.Card>
   );

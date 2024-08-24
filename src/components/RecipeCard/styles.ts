@@ -1,11 +1,16 @@
 import styled from 'styled-components';
 
 export const Card = styled.li`
-  border: 2px solid #111;
+  box-shadow: #00000026 2px 2px 1px;
   border-radius: 8px;
   font-family: var(--font-raleway);
   position: relative;
   display: flex;
+  transition: all 0.25s ease-in-out;
+
+  &:hover {
+    box-shadow: #00000026 4px 4px 4px;
+  }
 
   img {
     width: 100%;
@@ -31,12 +36,14 @@ export const TextContainer = styled.div`
 
 export const Title = styled.h3`
   font-size: 1rem;
+  line-height: 1rem;
   font-weight: 600;
   margin: 4px 0;
   font-family: var(--font-montserrat);
 
   @media screen and (min-width: 768px) {
     font-size: 1.25rem;
+    line-height: 1.25rem;
   }
 `;
 

@@ -13,6 +13,7 @@ export const FiltersLabel = styled.legend`
   font-family: var(--font-montserrat);
   font-weight: 700;
   text-align: center;
+  margin: 0 auto;
 `;
 
 export const FiltersDescription = styled.small`

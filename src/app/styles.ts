@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const MainContainer = styled.main`
   scrollbar-gutter: stable both-edges;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr min(100ch, 100%) 1fr;
 
@@ -12,7 +13,7 @@ export const MainContainer = styled.main`
 
 export const PageHeader = styled.header`
   width: 100%;
-  grid-column: 1 / 4;
+  grid-column: 1 / -1;
 
   display: flex;
   justify-content: center;

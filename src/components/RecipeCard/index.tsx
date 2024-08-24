@@ -20,7 +20,7 @@ const RecipeCard = ({ recipe }: RecipeCardProps) => {
         width={100}
         height={100}
       />
-      <caption>{recipe.difficulty}</caption>
+      <label>{recipe.difficulty}</label>
       <label>{recipe.position}</label>
     </S.Card>
   );

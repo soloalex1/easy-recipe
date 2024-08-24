@@ -32,11 +32,7 @@ export default function Home() {
         <S.SectionTitle id="recipes-title">Trending Recipes</S.SectionTitle>
         <S.RecipeGrid>
           {recipeList.map(({ id, ...recipe }) => (
-            <RecipeCard
-              key={id}
-              recipe={recipe as Recipe}
-              selected={recipe.difficulty === filter}
-            />
+            <RecipeCard key={id} recipe={recipe as Recipe} selected={filter!} />
           ))}
         </S.RecipeGrid>
       </section>

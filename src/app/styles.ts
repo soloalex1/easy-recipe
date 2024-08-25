@@ -1,14 +1,62 @@
-import styled from 'styled-components';
+import styled, { createGlobalStyle, css } from 'styled-components';
 
 export const theme = {
+  name: 'light',
   colors: {
-    blue: '#0057e7',
+    blue: '#0057E7',
     easy: '#008744',
-    medium: '#ffa700',
-    hard: '#d62d20',
-    white: '#faf8f6',
+    medium: '#FFA700',
+    hard: '#D62D20',
+    background: '#FAF8F6',
+    shadow: {
+      default: '#00000026 2px 2px 1px',
+      hover: '#00000026 4px 4px 4px',
+    },
+    text: {
+      primary: '#000000d9',
+      secondary: '#00000099',
+    },
   },
 };
+
+export const darkTheme = {
+  name: 'dark',
+  colors: {
+    blue: '#0057E7',
+    easy: '#008744',
+    medium: '#FFA700',
+    hard: '#D62D20',
+    background: '#121212',
+    shadow: {
+      default: '#FFFFFF26 2px 2px 1px',
+      hover: '#FFFFFF26 4px 4px 4px',
+    },
+    text: {
+      primary: '#FFF',
+      secondary: '#FFFFFFB3',
+    },
+  },
+};
+
+export const GlobalStyle = createGlobalStyle`
+${({ theme }) => css`
+  * {
+    box-sizing: border-box;
+    transition: all 0.5s ease-in-out;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: ${theme.colors.background};
+  }
+
+  body {
+    width: 100%;
+  }
+`}
+`;
 
 export const MainContainer = styled.main`
   scrollbar-gutter: stable both-edges;
@@ -22,20 +70,28 @@ export const MainContainer = styled.main`
 `;
 
 export const PageHeader = styled.header`
-  width: 100%;
-  grid-column: 1 / -1;
-  background-color: #eee;
-  border-radius: 0 0 8px 8px;
+  ${({ theme }) => css`
+    width: 100%;
+    grid-column: 1 / -1;
+    background-color: ${theme.colors.background};
+    border-radius: 0 0 8px 8px;
+  `}
 `;
 
 export const PageTitle = styled.h1`
-  font-family: var(--font-montserrat);
-  text-align: center;
+  ${({ theme }) => css`
+    color: ${theme.colors.text.primary};
+    font-family: var(--font-montserrat);
+    text-align: center;
+  `}
 `;
 
 export const SectionTitle = styled.h2`
-  font-family: var(--font-montserrat);
-  text-align: center;
+  ${({ theme }) => css`
+    color: ${theme.colors.text.primary};
+    font-family: var(--font-montserrat);
+    text-align: center;
+  `}
 `;
 
 export const RecipeGrid = styled.ol`

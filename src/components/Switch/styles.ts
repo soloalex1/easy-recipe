@@ -1,8 +1,12 @@
 import styled, { css } from 'styled-components';
 
 export const ButtonsContainer = styled.div`
-  text-align: right;
+  text-align: center;
   padding: 0 24px;
+
+  @media screen and (min-width: 768px) {
+    text-align: right;
+  }
 `;
 
 export const HiddenLabel = styled.label`

@@ -105,6 +105,7 @@ export const RecipeGrid = styled.ol`
 
   @media screen and (min-width: 768px) {
     padding: 0;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template: 240px / repeat(4, 1fr);
+    grid-auto-rows: 240px;
   }
 `;

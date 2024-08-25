@@ -12,7 +12,6 @@ const Switch = () => {
       <S.HiddenLabel id="theme-label">Change theme</S.HiddenLabel>
       <S.ButtonSwitch aria-pressed={name === 'light'} onClick={toggleTheme}>
         <svg
-          className="global-theme-switcher__icon"
           focusable="false"
           width="22"
           height="22"
@@ -32,7 +31,6 @@ const Switch = () => {
       </S.ButtonSwitch>
       <S.ButtonSwitch aria-pressed={name === 'dark'} onClick={toggleTheme}>
         <svg
-          className="global-theme-switcher__icon"
           focusable="false"
           width="22"
           height="22"

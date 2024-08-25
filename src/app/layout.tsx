@@ -4,7 +4,6 @@ import type { Metadata } from 'next';
 import { raleway, montserrat } from './fonts';
 import StyledComponentsRegistry from './registry';
 
-import './global.css';
 import ThemeClient from '@/components/ThemeClient';
 
 export const metadata: Metadata = {

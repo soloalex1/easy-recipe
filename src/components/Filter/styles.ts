@@ -30,7 +30,7 @@ export const FiltersDescription = styled.small`
 
 export const Button = styled.button<{ $isActive: boolean; id: string }>`
   ${({ theme, id, $isActive }) => css`
-    padding: 12px 32px;
+    padding: 8px 12px;
     background-color: ${theme.colors.background};
     font-family: var(--font-raleway);
     font-weight: 600;
@@ -51,6 +51,10 @@ export const Button = styled.button<{ $isActive: boolean; id: string }>`
     &:last-of-type {
       border-radius: 0 8px 8px 0;
       border-left-width: 1px;
+    }
+
+    @media screen and (min-width: 768px) {
+      padding: 12px 32px;
     }
   `}
 `;

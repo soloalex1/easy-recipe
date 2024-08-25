@@ -4,9 +4,9 @@ import { useState } from 'react';
 
 import RecipeCard from '@/components/RecipeCard';
 import Filter from '@/components/Filter';
+import Switch from '@/components/Switch';
 
 import useSortedRecipes from '@/hooks/useSortedRecipes';
-
 import { Recipe, Difficulty } from '@/types';
 
 import * as S from './styles';
@@ -24,6 +24,7 @@ export default function Home() {
     <S.MainContainer>
       <S.PageHeader>
         <S.PageTitle>Recipes</S.PageTitle>
+        <Switch />
       </S.PageHeader>
 
       <Filter filter={filter!} onChange={handleChange} />

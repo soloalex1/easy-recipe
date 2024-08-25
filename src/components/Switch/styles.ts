@@ -1,11 +1,13 @@
 import styled, { css } from 'styled-components';
 
 export const ButtonsContainer = styled.div`
-  text-align: center;
   padding: 0 24px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
 
   @media screen and (min-width: 768px) {
-    text-align: right;
+    justify-content: flex-end;
   }
 `;
 
@@ -26,15 +28,27 @@ export const ButtonSwitch = styled.button`
     display: inline-flex;
     flex-flow: row nowrap;
     align-items: center;
-    gap: 0.25rem;
-    padding: 4px 8px;
+    gap: 0.5rem;
+    padding: 0.25rem 0.5rem;
     justify-content: center;
-    border: 1px solid transparent;
-    border-radius: 2px;
+    border: 2px solid transparent;
+    border-radius: 8px;
     font-family: var(--font-raleway);
     color: ${theme.colors.text.primary};
     background-color: ${theme.colors.background};
     font-size: 1rem;
+
+    &[aria-pressed='true'] {
+      border: 2px solid ${theme.colors.text.primary};
+    }
+
+    span {
+      display: none;
+
+      @media screen and (min-width: 768px) {
+        display: initial;
+      }
+    }
 
     svg {
       color: ${theme.colors.text.primary};

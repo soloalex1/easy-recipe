@@ -3,14 +3,17 @@ import * as S from './styles';
 
 const Switch = () => {
   const {
-    toggleTheme,
+    onChangeTheme,
     theme: { name },
   } = useTheme();
 
   return (
     <S.ButtonsContainer aria-labelledby="theme-label">
       <S.HiddenLabel id="theme-label">Change theme</S.HiddenLabel>
-      <S.ButtonSwitch aria-pressed={name === 'light'} onClick={toggleTheme}>
+      <S.ButtonSwitch
+        aria-pressed={name === 'light'}
+        onClick={() => onChangeTheme('light')}
+      >
         <svg
           focusable="false"
           width="22"
@@ -29,7 +32,10 @@ const Switch = () => {
         </svg>
         <span>Light</span>
       </S.ButtonSwitch>
-      <S.ButtonSwitch aria-pressed={name === 'dark'} onClick={toggleTheme}>
+      <S.ButtonSwitch
+        aria-pressed={name === 'dark'}
+        onClick={() => onChangeTheme('dark')}
+      >
         <svg
           focusable="false"
           width="22"

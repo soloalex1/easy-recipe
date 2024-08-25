@@ -33,5 +33,5 @@ export type Theme = {
 
 export type ThemeContextData = {
   theme: Theme;
-  toggleTheme(): void;
+  onChangeTheme(newTheme: string): void;
 };
